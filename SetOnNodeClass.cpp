@@ -19,7 +19,7 @@ SetOnNodeClass::SetOnNodeClass(const SetOnNodeClass& anotherSetOnNodeClass)
 
 SetOnNodeClass::~SetOnNodeClass()
 {
-    delete_set();
+    //delete_set();
 }
 
 // проверка на пустоту множества
@@ -79,7 +79,7 @@ SetOnNodeClass::Node* SetOnNodeClass::create_set(int count_num, int min, int max
 }
 
 // мощность множества
-int SetOnNodeClass::set() {
+int SetOnNodeClass::set_size() {
     int lenght = 0;
     Node* temp = head;
     while (temp != nullptr) {
