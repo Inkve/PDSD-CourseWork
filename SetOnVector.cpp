@@ -27,7 +27,7 @@ bool SetOnVector::check_element(int value) {
     return std::find(SetVector.begin(), SetVector.end(), value) != SetVector.end();
 };
 
-// lобавление нового элемента в множество
+// добавление нового элемента в множество
 bool SetOnVector::add_element(int value) {
     if (check_element(value)) {
         return false;
@@ -95,7 +95,7 @@ bool SetOnVector::equality_set(SetOnVector& anotherSet) {
     return check_subset(anotherSet) && anotherSet.check_subset(*this);
 };
 
-// пересечение двух множеств
+// объединение двух множеств
 SetOnVector SetOnVector::set_union(SetOnVector anotherSet) {
     SetOnVector returnSet;
     for (const auto& element : SetVector) {

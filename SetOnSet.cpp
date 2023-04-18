@@ -1,7 +1,7 @@
 #include "SetOnSet.h"
 #include <algorithm>
 #include <ctime>
-#include "string.h"
+#include <cstring>
 
 
 SetOnSet::SetOnSet() {};
@@ -27,7 +27,7 @@ bool SetOnSet::check_element(int value) {
     return SetSet.find(value) != SetSet.end();
 };
 
-// lобавление нового элемента в множество
+// добавление нового элемента в множество
 bool SetOnSet::add_element(int value) {
     return SetSet.insert(value).second;
 };
@@ -48,7 +48,6 @@ bool SetOnSet::create_set(int count, int min, int max) {
     }
     return true;
 };
-
 
 // мощность множества
 int SetOnSet::set_size() {
@@ -91,7 +90,7 @@ bool SetOnSet::equality_set(SetOnSet& anotherSet) {
     return check_subset(anotherSet) && anotherSet.check_subset(*this);
 };
 
-// пересечение двух множеств
+// объединение двух множеств
 SetOnSet SetOnSet::set_union(SetOnSet anotherSet) {
     SetOnSet returnSet;
     for (const auto& element : SetSet) {

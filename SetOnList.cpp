@@ -1,7 +1,7 @@
 #include "SetOnList.h"
 #include <algorithm>
 #include <ctime>
-#include "string.h"
+#include <cstring>
 
 
 SetOnList::SetOnList() {};
@@ -27,7 +27,7 @@ bool SetOnList::check_element(int value) {
     return std::find(SetList.begin(), SetList.end(), value) != SetList.end();
 };
 
-// lобавление нового элемента в множество
+// добавление нового элемента в множество
 bool SetOnList::add_element(int value) {
     if (check_element(value)) {
         return false;

@@ -1,10 +1,10 @@
 #include <cstdlib>
 #include <string>
+#include <cstring>
 #include <ctime>
 #include "SetOnNodes.h"
-#include <string.h>
 
-// Создание пустого множества
+// создание пустого множества
 Node* create_empty_set() {
     return nullptr;
 }
@@ -74,7 +74,7 @@ int set_size(Node* address) {
     return  lenght;
 }
 
-// вывод элментов множества
+// вывод элементов множества
 std::string create_string_from_set (Node* address, const char* divider) {
     if (empty_check(address)) {
         return "";

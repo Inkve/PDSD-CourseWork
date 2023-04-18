@@ -1,11 +1,5 @@
-//
-// Created by inkve on 3/9/23.
-//
-
-#ifndef PDSD__3_SetOnNodeClassLAB3_LEVIN_H
-#define PDSD__3_SetOnNodeClassLAB3_LEVIN_H
-
-#endif //PDSD__3_SetOnNodeClassLAB3_LEVIN_H
+#ifndef PDSD_COURSEWORK_SETONNODECLASS_H
+#define PDSD_COURSEWORK_SETONNODECLASS_H
 
 #include <ctime>
 #include <stdlib.h>
@@ -29,13 +23,13 @@ public:
     bool empty_check();
     // проверка принадлежности элемента множеству
     bool check_element(int);
-    // lобавление нового элемента в множество
+    // добавление нового элемента в множество
     Node* add_element(int);
     // создание множества
     Node* create_set(int, int, int);
     // мощность множества
     int set_size();
-    // вывод элментов множества
+    // вывод элементов множества
     std::string create_string_from_set (const char*);
     // удаление множества
     Node* delete_set();
@@ -43,7 +37,7 @@ public:
     bool check_subset(SetOnNodeClass&);
     // равенство двух множеств
     bool equality_set(SetOnNodeClass&);
-    // пересечение двух множеств
+    // объединение двух множеств
     SetOnNodeClass set_union(SetOnNodeClass);
     // пересечение двух множеств
     SetOnNodeClass set_intersection(SetOnNodeClass);
@@ -52,3 +46,5 @@ public:
     // симметричная разность
     SetOnNodeClass set_symmetrical_difference(SetOnNodeClass);
 };
+
+#endif //PDSD_COURSEWORK_SETONNODECLASS_H

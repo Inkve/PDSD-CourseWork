@@ -27,7 +27,7 @@ bool SetOnString::check_element(int value) {
     return SetString.find(std::to_string(value)) != std::string::npos;
 };
 
-// lобавление нового элемента в множество
+// добавление нового элемента в множество
 bool SetOnString::add_element(int value) {
     if (check_element(value)) {
         return false;
@@ -101,7 +101,7 @@ bool SetOnString::equality_set(SetOnString& anotherSet) {
     return check_subset(anotherSet) && anotherSet.check_subset(*this);
 };
 
-// пересечение двух множеств
+// объединение двух множеств
 SetOnString SetOnString::set_union(SetOnString anotherSet) {
     SetOnString returnSet;
     std::string temp_string = SetString;

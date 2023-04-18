@@ -1,5 +1,5 @@
-#ifndef PDSD_4__SETLAB4_LEVIN_H
-#define PDSD_4__SETLAB4_LEVIN_H
+#ifndef PDSD_COURSEWORK_SETONLIST_H
+#define PDSD_COURSEWORK_SETONLIST_H
 #include <list>
 #include <string>
 
@@ -16,19 +16,19 @@ public:
     bool empty_check();
     // проверка принадлежности элемента множеству
     bool check_element(int);
-    // lобавление нового элемента в множество
+    // добавление нового элемента в множество
     bool add_element(int);
     // создание множества
     bool create_set(int, int, int);
     // мощность множества
     int set_size();
-    // вывод элментов множества
+    // вывод элементов множества
     std::string create_string_from_set (const char*);
     // является ли первое подмножеством второго
     bool check_subset(SetOnList&);
     // равенство двух множеств
     bool equality_set(SetOnList&);
-    // пересечение двух множеств
+    // объединение двух множеств
     SetOnList set_union(SetOnList);
     // пересечение двух множеств
     SetOnList set_intersection(SetOnList);
@@ -39,4 +39,4 @@ public:
 };
 
 
-#endif //PDSD_4__SETLAB4_LEVIN_H
+#endif //PDSD_COURSEWORK_SETONLIST_H

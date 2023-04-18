@@ -5,7 +5,7 @@ struct Node {
     Node* next;
 };
 
-// Создание пустого множества
+// создание пустого множества
 Node* create_empty_set();
 
 // проверка на пустоту множества
@@ -14,7 +14,7 @@ bool empty_check(Node*);
 // проверка принадлежности элемента множеству
 bool check_element(Node*, int);
 
-// lобавление нового элемента в множество
+// добавление нового элемента в множество
 Node* add_element(Node*, int);
 
 // создание множества
@@ -23,7 +23,7 @@ Node* create_set(int, int, int);
 // мощность множества
 int set_size(Node*);
 
-// вывод элментов множества
+// вывод элементов множества
 std::string create_string_from_set (Node*, const char*);
 
 // удаление множества
@@ -35,7 +35,7 @@ bool check_subset(Node*, Node*);
 // равенство двух множеств
 bool equality_set(Node*, Node*);
 
-// пересечение двух множеств
+// объединение двух множеств
 Node* set_union(Node*, Node*);
 
 // пересечение двух множеств
