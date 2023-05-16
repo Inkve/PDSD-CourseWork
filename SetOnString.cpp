@@ -56,7 +56,15 @@ bool SetOnString::create_set(int count, int min, int max) {
 
 // мощность множества
 int SetOnString::set_size() {
-    return SetString.size() / (SetString.find(";") + 1);
+    int counter = 0;
+    std::string temp_string = SetString;
+    auto pos = temp_string.find(";");
+    while (pos != std::string::npos) {
+        counter++;
+        temp_string = temp_string.substr(pos + 1);
+        pos = temp_string.find(";");
+    }
+    return counter;
 };
 
 // вывод элементов множества

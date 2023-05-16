@@ -14,7 +14,7 @@ int main() {
     auto times = time(NULL);
     unsigned int start_time;
     unsigned int end_time;
-    int SET1_SIZE = inputInt("Введите размер первого множества", 100, 100000);
+    int SET1_SIZE = inputInt("Введите размер множеств", 100, 100000);
     // int SET2_SIZE = inputInt("Введите размер второго множества", 100, 100000);
     int SET2_SIZE = SET1_SIZE;
     const int col_width = 25;
